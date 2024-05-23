@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+     background-color: #184785;
+    background-size: 100% 100%;
+    font-family: "poppins";
+}
+
+.box {
+    margin: 150px auto 5px;
+    
+    background-color: rgb(255, 255, 255);
+    width:60vmax;
+    height: 40vmax;
+    border: 2px;
+    border-radius: 25px;
+    box-shadow: 0 0 30px;
+    overflow: auto;
+    
+
+
+
+}
+
+.head {
+    color: #184785;
+    font-family: "poppins";
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+}
+
+.head img {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.btn {
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    outline: 3px groove black;
+    offset: 5px;
+     
+    border-radius: 25px;
+    padding: 5px;
+}
+
+input {
+
+    flex: 1;
+    outline: none;
+    border-style: none;
+    font-size: 4vmin;
+    font-weight: 800;
+    bord
+}
+
+input::placeholder {
+    color: #02387e;
+}
+
+button {
+    border-style: none;
+    outline: none;
+    padding: 10px;
+    background: #0257c6;
+    border-radius: 25px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+ul li {
+
+    font-size: 30px;
+    list-style: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+
+
+
+}
+
+ul li::before{
+
+
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 30px;
+     border-radius: 50%;
+     background-image: url(images/images.png);
+     background-position: center;
+     background-size: cover;
+     top: 20px;
+     left: 8px;
+}
+ul li.checked{
+    color: black;
+  text-decoration: line-through;
+}
+ul li.checked::before{
+
+    background-image: url(images/checked.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+ul li span{
+    position: absolute;
+    right: 35px;
+    text-align: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+}
+ul li span:hover{
+    background: #e00000;
+}
+@media (max-width:900px) {
+    .box{
+        width:100vw;
+    height: 80vh;
+    }
+  
+}
